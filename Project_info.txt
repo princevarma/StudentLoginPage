@@ -1,0 +1,57 @@
+Simple Login Page
+
+simple student form which collect the details of the student and store in the database
+admin(superuser) can read the data.
+
+A Django Project consists of four major Python files within the 
+project tree namely settings.py, views.py, urls.py, models.py
+
+The settings file deals with all the Django project settings at 
+system level , the urls file stores all the URL patterns for our 
+project that stem out and redirect from our main page. We store 
+our data models in Python Django format in the models file which 
+is then translated into SQLite operations by default in the process 
+without any explicit need to code. Finally the views file is where 
+the request and response functions are handled and the page 
+serving is done.
+
+We make use of something called a virtual environment to make our 
+project locally sustainable without bloating the main Python 
+installation and encapsulate it.
+
+#Install Python virtualenv module.
+->pip install --user virtualenv
+
+#Create virtual Env and actiavte it
+->python -m venv myenv
+
+#to activate Venv
+-> .\myenv\Scripts\activate
+
+#To install the django
+->pip install django
+
+#To check django version
+->django-admin --version
+
+#Creating a Project
+->django-admin startproject [project_name]
+
+#To chnage directory 
+->cd [project_name]
+
+#to create a app
+-> python manage.py startapp [app_name]
+
+
+
+#To make migration
+->python manage.py makemigrations
+->python manage.py migrate
+
+#To create superuser
+->python manage.py createsuperuser
+-Enter your desired username, email and password.
+
+
+
